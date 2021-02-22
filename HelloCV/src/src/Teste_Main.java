@@ -7,17 +7,16 @@ public class Teste_Main {
 	
   public static void main(String[] args) {
 	  
-	System.out.println("Bem-Vindo ao Open CV "+ Core.VERSION);//Mostra a Versão do OpenCV que você está utilizando.
+	System.out.println("Bem-Vindo ao Open CV "+ Core.VERSION);//Mostra a VersÃ£o do OpenCV que vocÃª estÃ¡ utilizando.
 	System.loadLibrary(Core.NATIVE_LIBRARY_NAME);/*Carrega a biblioteca do sistema especificado pelo argumento libname. 
-	É a maneira pela qual o nome da biblioteca é mapeada para o sistema de biblioteca real é dependente do sistema.
-	A chamada System.LoadLibrary (Atribuição da chamada) é efetivamente equivalente à chamada */
+	Ã‰ a maneira pela qual o nome da biblioteca Ã© mapeada para o sistema de biblioteca real Ã© dependente do sistema.
+	A chamada System.LoadLibrary (AtribuiÃ§Ã£o da chamada) Ã© efetivamente equivalente Ã  chamada */
 	Mat M =Mat.eye(5, 5, CvType.CV_8UC1);/*
-	8 - é profundidade de bits utilizado
+	8 - Ã© profundidade de bits utilizado
 	UC- Unsigned Char  
-	1 - é o canal do componente utilizado*/
+	1 - Ã© o canal do componente utilizado*/
 	System.out.println("M="+M.dump());/*Exibe a Matriz 
 	dump significa Despejo 
 	Exibe a matriz de forma A11,A12,A13 etc dependendo do tamanho da matriz em que a pessoa implementou definiu*/
 	}
-
 }
